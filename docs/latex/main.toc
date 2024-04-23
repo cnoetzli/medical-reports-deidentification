@@ -106,4 +106,3 @@
 \contentsline {paragraph}{Name}{26}{section*.38}%
 \contentsline {paragraph}{Occupation}{26}{section*.39}%
 \contentsline {section}{\numberline {12}Discussion and Summary}{26}{section.12}%
-\contentsline {section}{\numberline {13}Discussion and Summary}{26}{section.13}%
