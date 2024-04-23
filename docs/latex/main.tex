@@ -1,0 +1,85 @@
+\documentclass[10pt,a4]{article}
+\usepackage{fullpage}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{booktabs} % Required for using \toprule, \midrule, and \bottomrule in tables
+
+\usepackage{calc}  % Add this to handle calculations
+\newcommand{\real}[1]{#1}  % Define real if not already defined
+
+\def\tightlist{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+
+\title{De-Identification Tool for Clinical Reports}
+\author{Marc Zimmermann$^1$, Katie Kalt$^2$, Patrick Hirschi$^2$, and\\
+  Gunnar R\"atsch$^{1,2}$\\
+{\footnotesize $^1$ Biomedical Informatics Group, Department of Computer Science, ETH Zurich, Zurich, Switzerland}\\
+{\footnotesize $^2$ Department Research and Teaching, University Hospital Zurich, Zurich, Switzerland}}
+\date{October 2021}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+This document outlines the development and implementation of a robust
+software tool designed to de-identify clinical reports to address
+privacy regulations and policies. The tool employs advanced natural
+language processing techniques to accurately identify and anonymize
+personal health information (PHI) from clinical texts, making them
+suitable for further research and analysis without compromising
+patient confidentiality. Key components of the software include a
+customizable annotation pipeline, extensive lexica for precise entity
+recognition, and sophisticated algorithms for sensitive data detection
+and substitution. The document also details the software's
+architecture, setup requirements, usage guidelines, and performance
+metrics, supported by a case study on its application in a real-world
+healthcare setting. This comprehensive approach not only supports
+using the tool to meet regulatory requirements but also adapts
+efficiently to varied data formats and clinical environments.
+\end{abstract}
+
+\newpage
+
+\tableofcontents
+\newpage
+
+\section{Introduction}
+\input{overview.tex}
+
+\section{System Setup and Requirements}
+\input{installation.tex}
+
+\section{Architectural Overview}
+\input{code_overview.tex}
+
+\section{Key Components and Configurations}
+\input{components.tex}
+
+\section{Dictionary and Lexicon Assets}
+\input{lexica.tex}
+
+\section{Software Development and Updates}
+\input{development.tex}
+
+\section{Data Processing and Workflow Structuring}
+\input{structuring.tex}
+
+\section{Annotation Rules and Optimization Strategies}
+\input{rules_and_tuning.tex}
+
+\section{Guidelines for System Tuning}
+\input{tuning_tutorial.tex}
+
+\section{Performance Evaluation and Metrics}
+\input{evaluation.tex}
+
+\section{Case Study: Pipeline Performance on Report from University Hospital Zurich}
+\input{usz_pipeline_evaluation.tex}
+
+\section{Discussion and Summary}
+\input{discussion_summary.tex}
+
+\end{document}

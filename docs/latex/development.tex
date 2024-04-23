@@ -1,0 +1,35 @@
+%\section{Development}\label{development}
+
+For more details on the \href{code_overview.md}{code structure here}
+
+\subsection{Releases}\label{releases}
+
+Releases can be done via github actions and the built jar and users can
+download it on the
+\href{https://github.com/ratschlab/medical-reports-deidentification/releases}{github
+release page}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Adapt the version in the \texttt{\textless{}version\textgreater{}}
+  section of \href{https://github.com/ratschlab/medical-reports-deidentification/blob/main/deidentifier-pipeline/pom.xml}{maven config}
+\item
+  merge this change into main
+\item
+  create a tag locally on your computer using
+  \texttt{git\ tag\ v{[}version{]}}, e.g.~\texttt{git\ tag\ v1.0.0}
+\item
+  push tag using \texttt{git\ push\ origin\ v1.0.0} (adapt to the
+  version)
+\item
+  If the github actions workflow ran successfully, you can edit the
+  release as necessary on the
+  \href{https://github.com/ratschlab/medical-reports-deidentification/releases}{github
+  release page} and switch it from Pre-release to release (remove the
+  flag \texttt{This\ is\ a\ pre-release})
+\end{enumerate}
+
+Note, that there is a danger that the version in \texttt{pom.xml} and in
+the git tag don't match. This could/should be streamlined in the future.

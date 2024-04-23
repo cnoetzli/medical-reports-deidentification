@@ -1,0 +1,109 @@
+\contentsline {section}{\numberline {1}Introduction}{4}{section.1}%
+\contentsline {subsection}{\numberline {1.1}Document Import}{4}{subsection.1.1}%
+\contentsline {subsection}{\numberline {1.2}annotate}{4}{subsection.1.2}%
+\contentsline {subsubsection}{\numberline {1.2.1}JAPE Example}{6}{subsubsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.3}substitute}{7}{subsection.1.3}%
+\contentsline {subsubsection}{\numberline {1.3.1}Substitution Policies}{7}{subsubsection.1.3.1}%
+\contentsline {section}{\numberline {2}System Setup and Requirements}{7}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Installation}{7}{subsection.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.1}Prerequisites}{7}{subsubsection.2.1.1}%
+\contentsline {subsubsection}{\numberline {2.1.2}Getting the Software}{7}{subsubsection.2.1.2}%
+\contentsline {paragraph}{Building Yourself}{7}{section*.2}%
+\contentsline {subsubsection}{\numberline {2.1.3}Basic Usage Example}{8}{subsubsection.2.1.3}%
+\contentsline {paragraph}{Adapt Database Configuration}{8}{section*.3}%
+\contentsline {subsubsection}{\numberline {2.1.4}Further Tips for Running the Deidentifier Tool}{9}{subsubsection.2.1.4}%
+\contentsline {paragraph}{File Encoding}{9}{section*.4}%
+\contentsline {paragraph}{Increasing Memory}{9}{section*.5}%
+\contentsline {paragraph}{Customize Logging}{9}{section*.6}%
+\contentsline {paragraph}{Adding JDBC Drivers}{9}{section*.7}%
+\contentsline {section}{\numberline {3}Architectural Overview}{9}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Package Overview}{9}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}NLP Pipeline Implementation}{10}{subsection.3.2}%
+\contentsline {subsection}{\numberline {3.3}Aspects}{10}{subsection.3.3}%
+\contentsline {subsubsection}{\numberline {3.3.1}Configuration}{10}{subsubsection.3.3.1}%
+\contentsline {subsubsection}{\numberline {3.3.2}Parallelization}{10}{subsubsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.3}Testing}{10}{subsubsection.3.3.3}%
+\contentsline {section}{\numberline {4}Key Components and Configurations}{10}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Annotation Pipeline Components and theirs Configurations}{10}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}Data Input}{10}{subsection.4.2}%
+\contentsline {subsubsection}{\numberline {4.2.1}DB Configuration}{10}{subsubsection.4.2.1}%
+\contentsline {paragraph}{Report Filtering}{11}{section*.8}%
+\contentsline {subparagraph}{Document Type Filter}{11}{section*.9}%
+\contentsline {subparagraph}{Document ID Filter}{11}{section*.10}%
+\contentsline {subsection}{\numberline {4.3}Annotation Pipeline}{11}{subsection.4.3}%
+\contentsline {subsubsection}{\numberline {4.3.1}Pipeline Configuration File}{11}{subsubsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.2}Lexica (Dictionaries, Gazetteers)}{11}{subsubsection.4.3.2}%
+\contentsline {subsubsection}{\numberline {4.3.3}Specific JAPE Rules}{11}{subsubsection.4.3.3}%
+\contentsline {subsubsection}{\numberline {4.3.4}Report Structure}{12}{subsubsection.4.3.4}%
+\contentsline {paragraph}{Paths in Field Tree}{12}{section*.11}%
+\contentsline {paragraph}{Structured Annotations}{12}{section*.12}%
+\contentsline {paragraph}{Field Normalization (Field Annotation Mapping)}{13}{section*.13}%
+\contentsline {paragraph}{Annotation Blacklist}{13}{section*.14}%
+\contentsline {subsubsection}{\numberline {4.3.5}Context Annotations}{13}{subsubsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.4}Test Suite}{13}{subsection.4.4}%
+\contentsline {subsubsection}{\numberline {4.4.1}Test Cases Specification}{13}{subsubsection.4.4.1}%
+\contentsline {subparagraph}{Running Tests}{14}{section*.15}%
+\contentsline {section}{\numberline {5}Dictionary and Lexicon Assets}{14}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Lexica}{14}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}General}{15}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Locations}{15}{subsubsection.5.1.2}%
+\contentsline {paragraph}{Geographical}{15}{section*.16}%
+\contentsline {paragraph}{Organisational}{16}{section*.17}%
+\contentsline {subsubsection}{\numberline {5.1.3}Medical}{16}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}Occupations}{16}{subsubsection.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.5}Person Names}{16}{subsubsection.5.1.5}%
+\contentsline {subsubsection}{\numberline {5.1.6}Suffix Lists}{17}{subsubsection.5.1.6}%
+\contentsline {section}{\numberline {6}Software Development and Updates}{17}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Releases}{17}{subsection.6.1}%
+\contentsline {section}{\numberline {7}Data Processing and Workflow Structuring}{17}{section.7}%
+\contentsline {subsection}{\numberline {7.1}Diagnosis Extraction Pipeline}{17}{subsection.7.1}%
+\contentsline {subsubsection}{\numberline {7.1.1}Approach}{17}{subsubsection.7.1.1}%
+\contentsline {subsubsection}{\numberline {7.1.2}Pipeline Overview}{17}{subsubsection.7.1.2}%
+\contentsline {subsubsection}{\numberline {7.1.3}Configuration}{18}{subsubsection.7.1.3}%
+\contentsline {paragraph}{Database Configuraiton}{18}{section*.18}%
+\contentsline {paragraph}{Pipeline Configuration}{18}{section*.19}%
+\contentsline {subparagraph}{Keywords Configuration}{18}{section*.20}%
+\contentsline {subparagraph}{Reliability Context Configuration}{18}{section*.21}%
+\contentsline {subsubsection}{\numberline {7.1.4}Invocation}{19}{subsubsection.7.1.4}%
+\contentsline {subsubsection}{\numberline {7.1.5}Pipeline Description}{19}{subsubsection.7.1.5}%
+\contentsline {section}{\numberline {8}Annotation Rules and Optimization Strategies}{20}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Rules Guide and Tuning}{20}{subsection.8.1}%
+\contentsline {subsubsection}{\numberline {8.1.1}General Considerations}{20}{subsubsection.8.1.1}%
+\contentsline {subsubsection}{\numberline {8.1.2}Date Annotation}{20}{subsubsection.8.1.2}%
+\contentsline {paragraph}{Information Extraction for Dates}{20}{section*.22}%
+\contentsline {subsubsection}{\numberline {8.1.3}Name Annotation}{20}{subsubsection.8.1.3}%
+\contentsline {paragraph}{Shorthands/Abbreviations}{21}{section*.23}%
+\contentsline {paragraph}{Information Extraction for Names}{21}{section*.24}%
+\contentsline {subsubsection}{\numberline {8.1.4}Location Annotation}{21}{subsubsection.8.1.4}%
+\contentsline {subsubsection}{\numberline {8.1.5}Occupation Annotation}{22}{subsubsection.8.1.5}%
+\contentsline {subsubsection}{\numberline {8.1.6}Tuning Guidelines}{22}{subsubsection.8.1.6}%
+\contentsline {section}{\numberline {9}Guidelines for System Tuning}{22}{section.9}%
+\contentsline {subsection}{\numberline {9.1}Tuning Tutorial}{22}{subsection.9.1}%
+\contentsline {subsubsection}{\numberline {9.1.1}Setup}{22}{subsubsection.9.1.1}%
+\contentsline {subsubsection}{\numberline {9.1.2}Exercices}{23}{subsubsection.9.1.2}%
+\contentsline {paragraph}{Add test case for dates}{23}{section*.25}%
+\contentsline {paragraph}{Add missing location}{23}{section*.26}%
+\contentsline {paragraph}{Internal phone number format}{23}{section*.27}%
+\contentsline {section}{\numberline {10}Performance Evaluation and Metrics}{23}{section.10}%
+\contentsline {subsection}{\numberline {10.1}Evaluation Guide}{23}{subsection.10.1}%
+\contentsline {subsubsection}{\numberline {10.1.1}Create Goldstandard Set}{23}{subsubsection.10.1.1}%
+\contentsline {paragraph}{Annotation Guide}{23}{section*.28}%
+\contentsline {subsubsection}{\numberline {10.1.2}Evaluate with Respect to Goldstandard Set}{24}{subsubsection.10.1.2}%
+\contentsline {paragraph}{Analyse Results in More Details}{24}{section*.29}%
+\contentsline {section}{\numberline {11}Case Study: Pipeline Performance on Report from University Hospital Zurich}{24}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Pipeline Evaluation}{24}{subsection.11.1}%
+\contentsline {subsubsection}{\numberline {11.1.1}Method and Corpus}{24}{subsubsection.11.1.1}%
+\contentsline {subsubsection}{\numberline {11.1.2}Results}{25}{subsubsection.11.1.2}%
+\contentsline {paragraph}{Entire Goldstandard Corpus (Parts I + II):}{25}{section*.30}%
+\contentsline {paragraph}{Goldstandard Part I}{25}{section*.31}%
+\contentsline {paragraph}{Goldstandard Part II}{25}{section*.32}%
+\contentsline {subsubsection}{\numberline {11.1.3}Annotation Issues Observed}{25}{subsubsection.11.1.3}%
+\contentsline {paragraph}{Age}{25}{section*.33}%
+\contentsline {paragraph}{Contact}{25}{section*.34}%
+\contentsline {paragraph}{Date}{26}{section*.35}%
+\contentsline {paragraph}{ID}{26}{section*.36}%
+\contentsline {paragraph}{Location}{26}{section*.37}%
+\contentsline {paragraph}{Name}{26}{section*.38}%
+\contentsline {paragraph}{Occupation}{26}{section*.39}%
+\contentsline {section}{\numberline {12}Discussion and Summary}{26}{section.12}%
+\contentsline {section}{\numberline {13}Discussion and Summary}{26}{section.13}%

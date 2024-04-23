@@ -1,0 +1,228 @@
+\subsection{Lexica}\label{lexica}
+
+In GATE, a lexicon (or gazetteer) consists of a text file with one term
+per line. A term may contain spaces. The terms are treated as
+case-sensitive.
+
+The lexica compiled for the USZ pipeline have many different sources.
+Below tables describing the different lexica along with their
+provenance. Note, that some lexica cannot be published, as they contain
+hospital internal data. Note, that \texttt{ANNIE} refers to a GATE
+plugin, \texttt{GeoNames} to the geographical database which can be
+found here \texttt{https://www.geonames.org/}.
+
+\subsubsection{General}\label{general}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2405}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3797}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3797}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+File Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+abbreviations\_stop.lst & ANNIE German & Abbreviations like
+\texttt{z.B} \\
+general\_wordlist\_with\_uppercased.lst & Aspell dictionary & General
+wordlist \\
+stop.lst & ANNIE German & Stopwords \\
+\end{longtable}
+
+\subsubsection{Locations}\label{locations}
+
+\paragraph{Geographical}\label{geographical}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1564}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1611}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6825}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+File Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+additional\_locations.lst & Manually edited & \\
+canton\_names.lst & GeoNames and manually added & ``Uri'' \\
+cantons\_abbrevs.lst & GeoNames and manually added & ``ZH'', ``BE'' \\
+citizenships.lst & Wikipedia and manually added & ``Schweizer'',
+``Deutsche'' \\
+city.lst & ANNIE & various cities (worldwide) \\
+city\_ambiguous\_manual.lst & Manually edited & Cities which typically
+have another meaning in the context of medical reports,
+e.g.~\texttt{Wangen}, \texttt{Füssen}. No Location annotations are
+performed. \\
+city\_derived.lst & ANNIE & \\
+city\_german.lst & ANNIE & \\
+city\_switzerland.lst & Swisstopo Ortschaftenverzeichnis & \\
+country.lst & ANNIE & \\
+country\_adjectives\_german.lst & Wikipedia and manually added &
+``Italienisch'', ``Italienischer'' \\
+country\_german.lst & ANNIE & \\
+country\_german\_wiki.lst & Wikipedia & Country Names \\
+country\_iso\_codes.lst & Manual & \\
+country\_manual.lst & Manual & Contains countries not existing
+anymore \\
+country\_regions\_german\_wiki.lst & Wikipedia & ``Norditalien'' \\
+languages\_manual.lst & Manual & \\
+larger\_cities.lst & GeoNames & Larger international cities,
+``Tripoli'', ``Hannover'' \\
+location\_false\_positives.lst & Manual & Typically medical terms
+containing location as a part (not annotated) \\
+province.lst & ANNIE & \\
+regions.lst & Manual & \\
+streetnames.lst & Manual & Streets or similar not matching a typical
+pattern \\
+toponyms\_switzerland.lst & GeoNames & All sorts of topopynms. Extensive
+blacklist was needed for ambiguous locations \\
+toponyms\_switzerland\_manual.lst & Manual & More Swiss Toponyms \\
+\end{longtable}
+
+\paragraph{Organisational}\label{organisational}
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3483}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1461}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5056}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+File Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+buildings\_usz.lst & USZ (KISIM) & Building abbreviations at USZ \\
+hospitals.lst & Manual & Hospital names \\
+institutions.lst & Manual & Institutions related to USZ \\
+organisational\_units\_usz.lst & USZ (KISIM) & Abbreviations of
+organisational units \\
+related\_organisations\_usz.lst & USZ (KISIM) & Institutions related to
+USZ. Internal only. \\
+\end{longtable}
+
+\subsubsection{Medical}\label{medical}
+
+Including information about medical terms into the pipeline is mainly to
+avoid an annotation on it, typically for surnames.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1745}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2013}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6242}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+File Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+drugs\_usz.lst & USZ (KISIM) & \\
+medical\_mesh\_terms.lst & MESH 2019 German Translation &
+https://www.dimdi.de/dynamic/en/classifications/further-classifications-and-standards/mesh/ \\
+medical\_terms\_de.lst & Wikipedia & \\
+medical\_terms\_manual.lst & Manual & \\
+\end{longtable}
+
+\subsubsection{Occupations}\label{occupations}
+
+Professions and companies a patient might work for.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2500}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1100}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.6400}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+File Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+company\_list\_ch.lst & Wikipedia & \\
+generic\_occupations.lst & Manual & More for testing purposes \\
+occupations\_usz.lst & USZ Kisim & Processed list of professions entered
+in KISIM. Internal only. \\
+\end{longtable}
+
+\subsubsection{Person Names}\label{person-names}
+
+A few lexica are partitioned into two parts with ``frequent'' and
+``seldom'' names. The distinction is used by some rules as indication
+whether a token might likely be a name or not.
+
+\begin{longtable}[]{@{}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.3274}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.4867}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1858}}@{}}
+\toprule\noalign{}
+\begin{minipage}[b]{\linewidth}\raggedright
+File Name
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Source
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+Description
+\end{minipage} \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+firstnames\_switzerland\_frequent.lst & Bundesamt für Statistik:
+Vornamen in der Schweiz 2017 & \\
+firstnames\_switzerland\_seldom.lst & Bundesamt für Statistik: Vornamen
+in der Schweiz 2017 & \\
+firstnames\_usz\_frequent.lst & USZ (KISIM) & \\
+name\_false\_positives.lst & Manual & Often medical terms \\
+surnames\_usz\_frequent.lst & USZ (KISIM) & \\
+firstnames\_usz\_seldom.lst & USZ (KISIM) & Internal only \\
+surnames\_staff\_usz.lst & USZ (KISIM) & Internal only \\
+surnames\_usz\_seldom.lst & USZ (KISIM) & Internal only \\
+\end{longtable}
+
+\subsubsection{Suffix Lists}\label{suffix-lists}
+
+Instead of using lexica annotating terms 1:1 in the text, a part of the
+pipeline annotates tokens based on suffixes. This is useful for missing
+terms in the other dictionaries. For example \texttt{Nasenerkrankung}
+would still be recognized as medical term, even though it might not be
+in any medical dictionary.
+
+\begin{longtable}[]{@{}lll@{}}
+\toprule\noalign{}
+File Name & Source & Description \\
+\midrule\noalign{}
+\endhead
+\bottomrule\noalign{}
+\endlastfoot
+medical\_suffixes.lst & Manual &
+\texttt{erkrankung},\texttt{geräusch} \\
+surname\_suffixes.lst & Manual & \texttt{mann},\texttt{oulos} \\
+\end{longtable}
