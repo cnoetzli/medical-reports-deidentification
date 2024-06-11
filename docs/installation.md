@@ -158,13 +158,17 @@ docker build --tag deidentifier:1.0.0 .
 3. To run the annotaion and substitution in a docker container use the following command (Linux):
 
 ```bash
-docker run deidentifier:1.0.0 sh -c  "java -cp '/deidentifier-pipeline/target/deidentifier-1.0.0.jar:/mssql-jdbc-12.6.2.jre8.jar' org.ratschlab.deidentifier.DeidMain annotate -d db_conf.txt -o annotated_reports -c configs/kisim-usz/kisim_usz.conf && java -cp '/deidentifier-pipeline/target/deidentifier-1.0.0.jar:/mssql-jdbc-12.6.2.jre8.jar' org.ratschlab.deidentifier.DeidMain substitute --db-config db_conf.txt --method Scrubber annotated_reports"
+docker run -v ./db_conf.txt:/db_conf.txt deidentifier:1.0.0 sh -c  "java -cp '/deidentifier-pipeline/target/deidentifier-1.0.0.jar:/mssql-jdbc-12.6.2.jre8.jar' org.ratschlab.de identifier.DeidMain annotate -d db_conf.txt -o annotated_reports -c configs/kisim-usz/kisim_usz.conf && java -cp '/deidentifier-pipeline/target/deidentifier-1.0.0.jar:/mssql-jdbc-12.6.2.jre8.jar' org.ratschlab.deidentifier.DeidMain substitute --db-config db_conf.txt --method Scrubber annotated_reports"
 ```
+
+>
+> Make sure to mount db_conf.txt correctly
+
 
 When using a Windows command line use the following command:
 
 
 ```bash
-docker run deidentifier:1.0.0 sh -c  "java -cp '/deidentifier-pipeline/target/deidentifier-1.0.0.jar;/mssql-jdbc-12.6.2.jre8.jar' org.ratschlab.deidentifier.DeidMain annotate -d db_conf.txt -o annotated_reports -c configs/kisim-usz/kisim_usz.conf && java -cp '/deidentifier-pipeline/target/deidentifier-1.0.0.jar;/mssql-jdbc-12.6.2.jre8.jar' org.ratschlab.deidentifier.DeidMain substitute --db-config db_conf.txt --method Scrubber annotated_reports"
+docker run -v ./db_conf.txt:/db_conf.txt deidentifier:1.0.0 sh -c  "java -cp '/deidentifier-pipeline/target/deidentifier-1.0.0.jar;/mssql-jdbc-12.6.2.jre8.jar' org.ratschlab.deidentifier.DeidMain annotate -d db_conf.txt -o annotated_reports -c configs/kisim-usz/kisim_usz.conf && java -cp '/deidentifier-pipeline/target/deidentifier-1.0.0.jar;/mssql-jdbc-12.6.2.jre8.jar' org.ratschlab.deidentifier.DeidMain substitute --db-config db_conf.txt --method Scrubber annotated_reports"
 ```
 
